@@ -1,39 +1,97 @@
 import Image from 'next/image';
+import OurServices from './components/OurServices';
+import Cores from './components/Cores';
 
 export default function Home() {
   return (
-    <div className='bg-white dark:bg-gray-800 h-screen h-full py-6 sm:py-8 lg:py-12'>
-      <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
-        <div className='mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12'>
-          <div className='flex items-center gap-12'>
-            <h2 className='text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white'>
-              Gallery
-            </h2>
-
-            <p className='hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block'>
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text.
+    <>
+      <header>
+        <nav></nav>
+        <div className='grid max-w-screen-xl px-4 py-8 mx-auto gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
+          <div className='place-self-center lg:col-span-7'>
+            <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl lg:text-left text-center'>
+              Welcome to Probuld Trading PLC
+            </h1>
+            <p className='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl  lg:text-left text-center pt-2 text-pretty'>
+              Probuld Trading PLC has established itself as a leading provider
+              of construction chemicals and waterproofing solutions in Ethiopia.
+              Our commitment to excellence and innovation has enabled us to
+              deliver high-quality products and services that meet the diverse
+              needs of our clients.
             </p>
+            <div className='flex lg:justify-start justify-center'>
+              <a
+                href='#'
+                className='inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg 700 bg-black hover:bg-gray-300 hover:text-black transition focus:ring-4 focus:ring-primary-300'
+              >
+                Our Products
+                <svg
+                  className='w-5 h-5 ml-2 -mr-1'
+                  fill='currentColor'
+                  viewBox='0 0 20 20'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
+                    clipRule='evenodd'
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href='tel:0974319143'
+                className='inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 '
+              >
+                Speak to Sales
+              </a>
+            </div>
           </div>
-
-          <a
-            href='#'
-            className='inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base'
-          >
-            More
-          </a>
+          <div className='lg:mt-0 lg:col-span-5'>
+            <Image
+              priority
+              src='/logo-five.jpg'
+              alt='hero image'
+              width={100}
+              height={200}
+              className='lg:rounded-[5rem_5rem_5rem_5rem] rounded-lg size-[40rem] max-lg:w-full max-lg:h-[25rem] object-cover object-center transition duration-200 group-hover:scale-110 hover:scale-[1.01]'
+            />
+          </div>
         </div>
+      </header>
 
-        <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8'>
+      <Cores />
+      <OurServices />
+      <main className='mx-4'>
+        <section className='grid grid-cols-2 gap-2 sm:grid-cols-5 md:gap-4 max-w-7xl mx-auto'>
           <a
             href='#'
-            className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80'
+            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-3 md:h-[464px]'
           >
-            <img
-              src='https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600'
-              loading='lazy'
-              alt='Photo by Minh Pham'
+            <Image
+              priority
+              src='/product-images/image-one.jpg'
+              alt='image one'
+              width={100}
+              height={200}
+              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
+            />
+
+            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
+
+            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
+              Tech
+            </span>
+          </a>
+          <a
+            href='#'
+            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[464px] md:col-span-2'
+          >
+            <Image
+              priority
+              src='/product-images/image-one.jpg'
+              alt='image one'
+              width={100}
+              height={200}
               className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
             />
 
@@ -46,48 +104,14 @@ export default function Home() {
 
           <a
             href='#'
-            className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80'
-          >
-            <img
-              src='https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000'
-              loading='lazy'
-              alt='Photo by Magicle'
-              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-            />
-
-            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-
-            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
-              Tech
-            </span>
-          </a>
-
-          <a
-            href='#'
-            className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80'
-          >
-            <img
-              src='https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000'
-              loading='lazy'
-              alt='Photo by Martin Sanchez'
-              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-            />
-
-            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-
-            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
-              Dev
-            </span>
-          </a>
-
-          <a
-            href='#'
-            className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80'
+            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[464px] md:col-span-2'
           >
             <Image
-              src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600'
-              loading='lazy'
-              alt='Photo by Lorenzo Herrera'
+              priority
+              src='/product-images/image-one.jpg'
+              alt='image one'
+              width={100}
+              height={200}
               className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
             />
 
@@ -97,8 +121,27 @@ export default function Home() {
               Retro
             </span>
           </a>
-        </div>
-      </div>
-    </div>
+          <a
+            href='#'
+            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-3 md:h-[464px]'
+          >
+            <Image
+              priority
+              src='/product-images/image-one.jpg'
+              alt='image one'
+              width={100}
+              height={200}
+              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
+            />
+
+            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
+
+            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
+              Dev
+            </span>
+          </a>
+        </section>
+      </main>
+    </>
   );
 }
