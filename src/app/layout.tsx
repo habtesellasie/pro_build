@@ -5,9 +5,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Probuld',
+  title: 'Probuild',
   description:
-    'Probuld Trading PLC has established itself as a leading provider of construction chemicals and waterproofing solutions in Ethiopia. Our commitment to excellence and innovation has enabled us to deliver high-quality products and services that meet the diverse needs of our clients.',
+    'Probuild Trading PLC has established itself as a leading provider of construction chemicals and waterproofing solutions in Ethiopia. Our commitment to excellence and innovation has enabled us to deliver high-quality products and services that meet the diverse needs of our clients.',
 };
 
 export default function RootLayout({

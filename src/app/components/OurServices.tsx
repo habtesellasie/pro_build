@@ -4,7 +4,7 @@ const OurServices = () => {
   return (
     <section className='pt-10 pb-10 lg:pt-[120px] lg:pb-[90px]'>
       <div className='container mx-auto'>
-        <div className='-mx-4 flex flex-wrap'>
+        <div className='mx-4 flex flex-wrap'>
           <div className='w-full px-4'>
             <div className='mx-auto mb-12 max-w-[510px] text-center lg:mb-20'>
               <span className='text-primary mb-2 block text-lg font-semibold'>
@@ -14,7 +14,7 @@ const OurServices = () => {
                 What We Offer
               </h2>
               <p className='text-body-color text-base dark:text-dark-6'>
-                At Probuld Trading PLC, we offer a comprehensive range of
+                At Probuild Trading PLC, we offer a comprehensive range of
                 services to cater to various waterproofing and construction
                 needs:
               </p>

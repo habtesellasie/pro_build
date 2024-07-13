@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import OurServices from './components/OurServices';
 import Cores from './components/Cores';
+import AboutUs from './components/AboutUs';
+import OurProducts from './components/OurProducts';
 
 export default function Home() {
   return (
@@ -10,10 +12,10 @@ export default function Home() {
         <div className='grid max-w-screen-xl px-4 py-8 mx-auto gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
           <div className='place-self-center lg:col-span-7'>
             <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl lg:text-left text-center'>
-              Welcome to Probuld Trading PLC
+              Welcome to Probuild Trading PLC
             </h1>
             <p className='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl  lg:text-left text-center pt-2 text-pretty'>
-              Probuld Trading PLC has established itself as a leading provider
+              Probuild Trading PLC has established itself as a leading provider
               of construction chemicals and waterproofing solutions in Ethiopia.
               Our commitment to excellence and innovation has enabled us to
               deliver high-quality products and services that meet the diverse
@@ -59,88 +61,13 @@ export default function Home() {
         </div>
       </header>
 
-      <Cores />
-      <OurServices />
-      <main className='mx-4'>
-        <section className='grid grid-cols-2 gap-2 sm:grid-cols-5 md:gap-4 max-w-7xl mx-auto'>
-          <a
-            href='#'
-            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-3 md:h-[464px]'
-          >
-            <Image
-              priority
-              src='/product-images/image-one.jpg'
-              alt='image one'
-              width={100}
-              height={200}
-              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-            />
-
-            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-
-            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
-              Tech
-            </span>
-          </a>
-          <a
-            href='#'
-            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[464px] md:col-span-2'
-          >
-            <Image
-              priority
-              src='/product-images/image-one.jpg'
-              alt='image one'
-              width={100}
-              height={200}
-              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-            />
-
-            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-
-            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
-              VR
-            </span>
-          </a>
-
-          <a
-            href='#'
-            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[464px] md:col-span-2'
-          >
-            <Image
-              priority
-              src='/product-images/image-one.jpg'
-              alt='image one'
-              width={100}
-              height={200}
-              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-            />
-
-            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-
-            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
-              Retro
-            </span>
-          </a>
-          <a
-            href='#'
-            className='group relative flex h-64 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-3 md:h-[464px]'
-          >
-            <Image
-              priority
-              src='/product-images/image-one.jpg'
-              alt='image one'
-              width={100}
-              height={200}
-              className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-            />
-
-            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-
-            <span className='relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg'>
-              Dev
-            </span>
-          </a>
-        </section>
+      <main>
+        <Cores />
+        <OurServices />
+        <AboutUs />
+        <div className='mx-4'>
+          <OurProducts />
+        </div>
       </main>
     </>
   );
