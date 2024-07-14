@@ -79,7 +79,7 @@ export default function Home() {
       </main>
 
       <footer className='container border-t-gray-500 border-t-[1px] mt-4 w-full py-4 mx-auto'>
-        <div className='flex container justify-between'>
+        <div className='flex container justify-between px-4'>
           <span>
             &copy;
             <span className='text-[15px]'>{new Date().getFullYear()}</span>{' '}

@@ -18,7 +18,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`fixed z-50 top-14 left-2 flex flex-col gap-4 border-2 border-gray-600/80 dark:border-gray-500 px-4 py-4 rounded-lg bg-black/40 backdrop-blur-md ${
+        className={`fixed z-50 top-14 left-2 flex flex-col gap-4 border-2 border-gray-600 px-4 py-4 rounded-lg bg-black backdrop-blur-md ${
           isMenuOpen ? 'block' : 'hidden'
         } md:hidden`}
       >
