@@ -19,7 +19,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className='flex gap-4 justify-center'>
+        <div className='flex flex-wrap gap-4 justify-center'>
           <Link
             href='tel:0974319143'
             className='flex items-center gap-3 hover:scale-[1.005] hover:text-blue-500 transition'

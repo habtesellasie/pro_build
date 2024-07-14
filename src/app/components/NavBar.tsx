@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav>
       <button
-        className='fixed z-50 top-2 left-2 md:hidden px-4 py-2 rounded-lg bg-gray-300/30 text-black hover:bg-gray-300 hover:ring-2 ring-blue-400 transition'
+        className='fixed z-50 top-2 left-2 md:hidden px-4 py-2 rounded-lg bg-gray-300 text-black hover:bg-gray-300 hover:ring-2 ring-blue-400 transition'
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? <IoClose size={20} /> : <IoMdMenu size={20} />}
