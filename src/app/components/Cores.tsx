@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Cores = () => {
   return (
-    <section className='bg-gray-100 py-16'>
+    <section className='bg-gray-100 py-16' id='our-vision'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='pb-10'>
           <span className='text-center text-primary mb-2 block text-lg font-semibold'>

@@ -2,7 +2,10 @@ import React from 'react';
 
 const OurServices = () => {
   return (
-    <section className='pt-10 pb-10 lg:pt-[120px] lg:pb-[90px]'>
+    <section
+      className='pt-10 pb-10 lg:pt-[120px] lg:pb-[90px]'
+      id='our-services'
+    >
       <div className='container mx-auto'>
         <div className='mx-4 flex flex-wrap'>
           <div className='w-full px-4'>
