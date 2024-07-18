@@ -3,7 +3,7 @@ import Image from 'next/image';
 const AboutUs = () => {
   return (
     <>
-      <div className='space-y-10 py-4' id='more-about-us'>
+      <div className='space-y-10 py-4'>
         <div className='flex max-lg:flex-col items-center lg:even:flex-row-reverse gap-4 group justify-center'>
           <div className='flex flex-col justify-center gap-2'>
             <div className='w-full max-w-[600px] relative'>
@@ -21,7 +21,7 @@ const AboutUs = () => {
           </div>
           <div className='w-full max-w-[600px]'>
             <Image
-              src='/logo-two.jpg'
+              src='/bg-two.jpg'
               alt='what we do'
               width={200}
               height={400}

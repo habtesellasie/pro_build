@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <header
-        className={`lg:h-[100dvh] md:h-[80dvh] min-h-[50dvh]  bg-cover bg-center bg-[url('/bg-one.jpeg')] bg-fixed`}
+        className={`lg:h-[100dvh] md:h-[80dvh] min-h-[50dvh] bg-cover bg-center bg-[url('/bg-one.jpeg')]`}
         // className={`lg:h-[100dvh] md:h-[80dvh] min-h-[50dvh]  bg-cover bg-center bg-[url('/bg-two.jpg')]`}
       >
         <div className='flex h-full lg:bg-gradient-to-r bg-gradient-to-b from-white/90 via-white/70 to-transparent'>
@@ -78,7 +78,7 @@ export default function Home() {
         <OurServices />
         <div className='mx-4'>
           <div className='mx-4 flex flex-wrap'>
-            <div className='w-full px-4'>
+            <div className='w-full px-4' id='more-about-us'>
               <div className='mx-auto mb-12 max-w-[510px] text-center lg:mb-20'>
                 <span className='text-primary mb-2 block text-lg font-semibold'>
                   Who We Are
@@ -100,19 +100,78 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className='container border-t-gray-500 border-t-[1px] mt-4 w-full py-4 mx-auto'>
-        <div className='flex container justify-between px-4'>
-          <span>
-            &copy;
-            <span className='text-[15px]'>{new Date().getFullYear()}</span>{' '}
-            Allright reserved
-          </span>
-          <Link
-            href='#top'
-            className='bg-gray-400 hover:bg-gray-600 text-white flex items-center justify-center py-2 px-2 rounded'
-          >
-            <FaArrowUp />
-          </Link>
+      <footer
+        className={`mt-4 w-full py-4 sm:px-0 px-4 h-[65dvh] bg-cover bg-center bg-[url('/bg-footer.avif')] bg-fixed`}
+      >
+        <div className='container mx-auto flex flex-col h-full'>
+          <div className='mx-4'>
+            <h3 className='text-2xl font-bold'>Office hours</h3>
+            <p className='text-white text-lg'>
+              Monday to Saturday 8:30 am to 6:00 pm
+            </p>
+
+            <div className='py-4'>
+              <p className='font-bold'>Quick links</p>
+
+              <ul className='flex flex-col gap-4 mt-4'>
+                <li>
+                  <Link
+                    href='#top'
+                    className='px-4 py-2 rounded-full bg-white hover:ring-2 ring-white hover:bg-gray-200 transition'
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='#our-vision'
+                    className='px-4 py-2 rounded-full bg-white hover:ring-2 ring-white hover:bg-gray-200 transition'
+                  >
+                    Our Vision
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='#our-services'
+                    className='px-4 py-2 rounded-full bg-white hover:ring-2 ring-white hover:bg-gray-200 transition'
+                  >
+                    Our Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='#more-about-us'
+                    className='px-4 py-2 rounded-full bg-white hover:ring-2 ring-white hover:bg-gray-200 transition'
+                  >
+                    More About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='#our-products'
+                    className='px-4 py-2 rounded-full bg-white hover:ring-2 ring-white hover:bg-gray-200 transition'
+                  >
+                    Our Products
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className='flex container justify-between items-center rounded-full mt-auto py-2 sm:px-6 px-2 sm:mx-0 bg-gray-100'>
+            <span className='sm:px-0 px-2'>
+              &copy;
+              <span className='text-[15px]'>
+                {new Date().getFullYear()}
+              </span>{' '}
+              Allright reserved
+            </span>
+            <Link
+              href='#top'
+              className='transition bg-gray-400 hover:bg-gray-600 text-white flex items-center justify-center py-2 px-2 rounded-full'
+            >
+              <FaArrowUp />
+            </Link>
+          </div>
         </div>
       </footer>
     </>

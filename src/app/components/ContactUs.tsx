@@ -21,28 +21,29 @@ const ContactUs = () => {
 
         <div className='flex flex-wrap gap-4 justify-center'>
           <Link
-            href='tel:0974319143'
+            href='tel:+251911507710'
             className='flex items-center gap-3 hover:scale-[1.005] hover:text-blue-500 transition'
           >
-            <FaPhone /> 0974319143
+            <FaPhone /> +251911507710
           </Link>
           <Link
-            href='tel:0974319143'
+            href='tel:+25191424290'
             className='flex items-center gap-3 hover:scale-[1.005] hover:text-blue-500 transition'
           >
-            <FaPhone /> 0974319143
+            <FaPhone /> +25191424290
           </Link>
           <Link
-            href=''
+            target='_blank'
+            href='https://www.tiktok.com/@probuildconchemicals?is_from_webapp=1&sender_device=pc'
             className='flex items-center gap-3 hover:scale-[1.005] hover:text-blue-500 transition'
           >
-            <BsTiktok size={20} /> @pro_build
+            <BsTiktok size={20} /> @probuildconchemicals
           </Link>
           <Link
-            href='mailto:adoniawubie@gmail.com'
+            href='mailto:probuildtrading11@gmail.com'
             className='flex items-center gap-3 hover:scale-[1.005] hover:text-blue-500 transition'
           >
-            <MdEmail size={20} /> adoniawubie@gmail.com
+            <MdEmail size={20} /> probuildtrading11@gmail.com
           </Link>
         </div>
       </section>

@@ -50,8 +50,7 @@ export default function RootLayout({
           property='og:image:secure_url'
           content='/favicon/android-chrome-512x512.png'
         />
-        <meta name='author' content='Adonia Wubie' />
-
+        {/* <meta name='author' content='Adonia Wubie' /> */}
         <meta
           name='description'
           content='Probuild Trading PLC is a premier provider of construction chemicals and waterproofing solutions in Ethiopia. We are committed to excellence and innovation, delivering high-quality products and services to meet the diverse needs of our clients.'
