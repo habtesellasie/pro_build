@@ -1,0 +1,36 @@
+{
+  "name": "Probuild",
+  "short_name": "PROBUILD PLC",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+
+  "description": "Probuild Trading PLC is a premier provider of construction chemicals and waterproofing solutions in Ethiopia. We are committed to excellence and innovation, delivering high-quality products and services to meet the diverse needs of our clients.",
+  "id": "http://probuild.netlify.app",
+  "start_url": "http://probuild.netlify.app",
+  "prefer_related_applications": true,
+  "theme_color": "#0ea5e9",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "screenshots": [
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
