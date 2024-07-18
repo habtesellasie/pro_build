@@ -98,7 +98,7 @@ const AboutUs = () => {
 
             {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
-            <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 border-[1px] border-gray-300 rounded'>
+            <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Bonding
               <p className='text-sm max-w-[500px] pt-2'>
                 High-performance bonding materials for various construction
@@ -122,7 +122,7 @@ const AboutUs = () => {
 
             {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
-            <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 border-[1px] border-gray-300 rounded'>
+            <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Aquamats
               <p className='text-sm max-w-[400px] pt-2'>
                 Advanced aquamats designed to provide superior waterproofing and
@@ -148,7 +148,7 @@ const AboutUs = () => {
 
             {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
-            <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 border-[1px] border-gray-300 rounded'>
+            <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Cementitious
               <p className='text-sm max-w-[400px] pt-2'>
                 Reliable cementitious products for waterproofing and structural
@@ -198,7 +198,7 @@ const AboutUs = () => {
 
           {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
-          <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 border-[1px] border-gray-300 rounded'>
+          <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
             UV Resistance for All Products
             <p className='text-sm max-w-[500px] pt-2'>
               All our products are formulated to resist UV radiation, ensuring

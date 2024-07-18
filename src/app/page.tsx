@@ -1,4 +1,5 @@
-import Image from 'next/image';
+'use client';
+
 import OurServices from './components/OurServices';
 import Cores from './components/Cores';
 import AboutUs from './components/AboutUs';
@@ -99,9 +100,18 @@ export default function Home() {
           <ContactUs />
         </div>
       </main>
+      <iframe
+        src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1240.405107967694!2d38.77381526962171!3d9.01228932398923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDAnNDQuMiJOIDM4wrA0NicyOC4xIkU!5e1!3m2!1sen!2set!4v1721281665337!5m2!1sen!2set'
+        width='100%'
+        height='550'
+        style={{ border: 0 }}
+        allowFullScreen={true}
+        loading='lazy'
+        referrerPolicy='no-referrer-when-downgrade'
+      ></iframe>
 
       <footer
-        className={`mt-4 w-full py-4 sm:px-0 px-4 h-[65dvh] bg-cover bg-center bg-[url('/bg-footer.avif')] bg-fixed`}
+        className={`w-full py-10 sm:px-0 mt-12 px-4 h-[65dvh] bg-cover bg-center bg-[url('/bg-footer.avif')] bg-fixed`}
       >
         <div className='container mx-auto flex flex-col h-full'>
           <div className='mx-4'>
@@ -110,7 +120,7 @@ export default function Home() {
               Monday to Saturday 8:30 am to 6:00 pm
             </p>
 
-            <div className='py-4'>
+            <div className='pt-8'>
               <p className='font-bold'>Quick links</p>
 
               <ul className='flex flex-col gap-4 mt-4'>
