@@ -172,7 +172,7 @@ const AboutUs = () => {
 
             {/* <div className='pointer-events-none absolute bottom-0 left-1/2 translate-x-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-gray-200 opacity-50'></div> */}
 
-            <span className='relative m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 border-[1px] border-gray-300 rounded'>
+            <span className='relative m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Acrylic
               <p className='text-sm max-w-[500px] pt-2'>
                 Versatile acrylic products offering excellent waterproofing and
