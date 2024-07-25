@@ -23,14 +23,28 @@ const OurProducts = () => {
       <div className='flex flex-wrap justify-center gap-4 mx-auto'>
         {products.map((product, productIndex) => {
           return (
-            <div key={productIndex} className='max-sm:w-full'>
-              <Image
-                src={`/Images/${product.image}`}
-                width={200}
-                height={200}
-                alt={`product image ${productIndex}`}
-                className='size-[20rem] object-cover rounded-md hover:scale-[1.02] transition border-[1px] border-gray-300 max-sm:w-full'
-              />
+            <div key={productIndex} className='flex flex-col items-center'>
+              <div className='max-sm:w-full relative hover:scale-[1.02]'>
+                <Image
+                  src={`/${product.image}`}
+                  width={200}
+                  height={200}
+                  alt={`product image ${productIndex}`}
+                  className='size-[25rem] object-cover rounded-md transition border-[1px] border-gray-300 max-sm:w-full'
+                />
+                <div className='w-full flex flex-col items-center justify-center'>
+                  {product?.name && (
+                    <span className='bottom-0 text-white p-2 text-sm text-center left-1/2  bg-black/60 backdrop-blur-sm w-full'>
+                      {product?.name}
+                    </span>
+                  )}
+                  {product?.name && (
+                    <p className='w-full max-w-md py-2 text-sm text-center shadow inline-block p-12'>
+                      {product?.description}
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
           );
         })}
