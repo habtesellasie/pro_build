@@ -31,7 +31,7 @@ export default function Home() {
                 provider of construction chemicals and waterproofing solutions
                 in Ethiopia. Our commitment to excellence and innovation has
                 enabled us to deliver high-quality products and services that
-                meet the diverse needs of our clients.
+                meet the diverse needs of clients.
               </p>
               <div className='flex lg:justify-start justify-center'>
                 <a
