@@ -81,7 +81,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <section className='max-w-7xl mx-auto mt-10'>
+      {/* <section className='max-w-7xl mx-auto mt-10'>
         <div className='grid grid-cols-1 gap-2 md:grid-cols-5 md:gap-4'>
           <a
             href='#'
@@ -95,8 +95,6 @@ const AboutUs = () => {
               height={200}
               className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 max-md:h-[22rem]'
             />
-
-            {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
             <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Bonding
@@ -120,7 +118,6 @@ const AboutUs = () => {
               className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 max-md:h-[22rem]'
             />
 
-            {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
             <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Aquamats
@@ -146,7 +143,6 @@ const AboutUs = () => {
               className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 max-md:h-[22rem]'
             />
 
-            {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
 
             <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Cementitious
@@ -170,7 +166,6 @@ const AboutUs = () => {
               className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 max-md:h-[22rem]'
             />
 
-            {/* <div className='pointer-events-none absolute bottom-0 left-1/2 translate-x-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-gray-200 opacity-50'></div> */}
 
             <span className='relative m-2 inline-block text-sm text-white md:text-lg p-2 bg-gray-900 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
               Acrylic
@@ -196,8 +191,6 @@ const AboutUs = () => {
             className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
           />
 
-          {/* <div className='pointer-events-none absolute bottom-0 left-1/2 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent opacity-50'></div> */}
-
           <span className='relative px-2 m-2 inline-block text-sm text-white md:text-lg p-2 bg-black/60 backdrop-blur-md border-gray-300 rounded-md border-2'>
             UV Resistance for All Products
             <p className='text-sm max-w-[500px] pt-2'>
@@ -207,7 +200,7 @@ const AboutUs = () => {
             </p>
           </span>
         </a>
-      </section>
+      </section> */}
     </>
   );
 };

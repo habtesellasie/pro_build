@@ -126,19 +126,7 @@ Roofs, woods, decks,
 On old-based bitumen problematic insulation,
 Shingle surfaces`,
   },
-  {
-    name: 'ISONEM LIQUID GLASS',
-    image: 'product-images/isonem-liquid-glass.png',
-    description: `ISONEM LIQUID GLASS is a two-component product which excellent adheres to surface like glass,
-mosaic, tile, porcelain, ceramic, marble, granite, natural stone, wood, concrete, screed, galvanized 
-sheet, aluminum etc.. 
-Usage Areas:
-Glass, glass brick, mosaic, mosaic tile,
-Tiles, ceramics, marble, granite, natural stone, porcelain surface,
-In press bricks,
-On wooden surfaces,
-Balcony, terrace, bathroom, kitchen, stone-covered exterior.`,
-  },
+
   {
     name: 'Rubberized Bitumen Emulsion',
     image: 'product-images/tmpphptusbk4-2024-01-22-65ae0869a78c1.jpg',
